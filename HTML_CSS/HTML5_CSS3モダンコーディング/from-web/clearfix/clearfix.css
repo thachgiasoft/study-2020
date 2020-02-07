@@ -1,0 +1,23 @@
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.green {
+	background-color: green;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+.yellow {
+	background-color: yellow;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+.red {
+	background-color: red;
+	width: 200px;
+	height: 200px;
+}
