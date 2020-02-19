@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct OrderDetail: View {
-    var order: OrderEntity
+    @ObservedObject var order: OrderEntity
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
@@ -19,11 +19,17 @@ struct OrderDetail: View {
                         .resizable()
                         .frame(width: 30, height: 30)
                         .foregroundColor(.pink)
+                        .onTapGesture {
+                            self.order.favorite = false
+                        }
                 } else {
                     Image(systemName: "heart.circle")
                         .resizable()
                         .frame(width: 30, height: 30)
                         .foregroundColor(.gray)
+                        .onTapGesture {
+                            self.order.favorite = true
+                        }
                 }
             }.padding()
             
@@ -48,10 +54,13 @@ struct OrderDetail: View {
 }
 
 struct OrderDetail_Previews: PreviewProvider {
+    static var orderStore: OrderStore {
+        let orderStore = OrderStore()
+        orderStore.orders.append(OrderEntity())
+        return orderStore
+    }
+    
     static var previews: some View {
-        Group {
-            OrderDetail(order: orderStore.orders[0])
-            OrderDetail(order: orderStore.orders[1])
-        }
+        OrderDetail(order: orderStore.orders[0])
     }
 }

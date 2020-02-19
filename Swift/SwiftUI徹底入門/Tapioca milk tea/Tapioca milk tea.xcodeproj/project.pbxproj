@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		538C05272380DB91006B97C5 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C05262380DB91006B97C5 /* OrderDetail.swift */; };
 		538C05292380DE54006B97C5 /* OrderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C05282380DE54006B97C5 /* OrderRowView.swift */; };
-		538C052D2380E693006B97C5 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C052C2380E693006B97C5 /* OrderView.swift */; };
 		538C05342380EF65006B97C5 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C05302380EF65006B97C5 /* Shop.swift */; };
 		538C05352380EF65006B97C5 /* shop.json in Resources */ = {isa = PBXBuildFile; fileRef = 538C05312380EF65006B97C5 /* shop.json */; };
 		538C05362380EF65006B97C5 /* special.json in Resources */ = {isa = PBXBuildFile; fileRef = 538C05322380EF65006B97C5 /* special.json */; };
@@ -28,6 +27,8 @@
 		53F05E4522F3228C009E3AA8 /* OrderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F05E4422F3228C009E3AA8 /* OrderEntity.swift */; };
 		53F05E4722F326FF009E3AA8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F05E4622F326FF009E3AA8 /* Data.swift */; };
 		53F05E4922F3275A009E3AA8 /* orderEntity.json in Resources */ = {isa = PBXBuildFile; fileRef = 53F05E4822F3275A009E3AA8 /* orderEntity.json */; };
+		9A4017F923FDEF8B0074018E /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4017F823FDEF8B0074018E /* KeyboardObserver.swift */; };
+		9A4017FD23FDF3B70074018E /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4017FC23FDF3B70074018E /* OrderView.swift */; };
 		9ACA303623EE5B6F00135936 /* ShopImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA303523EE5B6F00135936 /* ShopImage.swift */; };
 		9ACA303823EE5DC000135936 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA303723EE5DC000135936 /* ShopView.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +36,6 @@
 /* Begin PBXFileReference section */
 		538C05262380DB91006B97C5 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
 		538C05282380DE54006B97C5 /* OrderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRowView.swift; sourceTree = "<group>"; };
-		538C052C2380E693006B97C5 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		538C05302380EF65006B97C5 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		538C05312380EF65006B97C5 /* shop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shop.json; sourceTree = "<group>"; };
 		538C05322380EF65006B97C5 /* special.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = special.json; sourceTree = "<group>"; };
@@ -56,6 +56,8 @@
 		53F05E4422F3228C009E3AA8 /* OrderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderEntity.swift; sourceTree = "<group>"; };
 		53F05E4622F326FF009E3AA8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Data.swift; path = "Tapioca milk tea/Data/Data.swift"; sourceTree = SOURCE_ROOT; };
 		53F05E4822F3275A009E3AA8 /* orderEntity.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = orderEntity.json; sourceTree = "<group>"; };
+		9A4017F823FDEF8B0074018E /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		9A4017FC23FDF3B70074018E /* OrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderView.swift; path = "../../../../../../Downloads/swiftui-sample-code2019-11-25/Chapter11/Complete/Tapioca milk tea/Tapioca milk tea/OrderView.swift"; sourceTree = "<group>"; };
 		9ACA303523EE5B6F00135936 /* ShopImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopImage.swift; sourceTree = "<group>"; };
 		9ACA303723EE5DC000135936 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,13 +105,14 @@
 		53BB726422E1C33C00AA7546 /* Tapioca milk tea */ = {
 			isa = PBXGroup;
 			children = (
+				9A4017F723FDEF8B0074018E /* Utils */,
 				538C05252380DB5D006B97C5 /* Views */,
 				53F05E4A22F3C5A1009E3AA8 /* Data */,
 				53BB726522E1C33C00AA7546 /* AppDelegate.swift */,
 				53BB726722E1C33C00AA7546 /* SceneDelegate.swift */,
 				53BB726C22E1C33C00AA7546 /* ContentView.swift */,
+				9A4017FC23FDF3B70074018E /* OrderView.swift */,
 				538C05262380DB91006B97C5 /* OrderDetail.swift */,
-				538C052C2380E693006B97C5 /* OrderView.swift */,
 				538C05382380F14E006B97C5 /* OrderHistoryView.swift */,
 				538C053E2380F561006B97C5 /* HomeView.swift */,
 				53BB726E22E1C33E00AA7546 /* Assets.xcassets */,
@@ -140,6 +143,14 @@
 				53F05E4422F3228C009E3AA8 /* OrderEntity.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		9A4017F723FDEF8B0074018E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A4017F823FDEF8B0074018E /* KeyboardObserver.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,14 +229,15 @@
 			files = (
 				53BB726622E1C33C00AA7546 /* AppDelegate.swift in Sources */,
 				538C053F2380F561006B97C5 /* HomeView.swift in Sources */,
-				538C052D2380E693006B97C5 /* OrderView.swift in Sources */,
 				538C053B2380F18F006B97C5 /* ShopRow.swift in Sources */,
 				53F05E4522F3228C009E3AA8 /* OrderEntity.swift in Sources */,
 				538C05392380F14E006B97C5 /* OrderHistoryView.swift in Sources */,
 				9ACA303823EE5DC000135936 /* ShopView.swift in Sources */,
 				53BB726D22E1C33C00AA7546 /* ContentView.swift in Sources */,
+				9A4017FD23FDF3B70074018E /* OrderView.swift in Sources */,
 				9ACA303623EE5B6F00135936 /* ShopImage.swift in Sources */,
 				538C053D2380F280006B97C5 /* CategoryRow.swift in Sources */,
+				9A4017F923FDEF8B0074018E /* KeyboardObserver.swift in Sources */,
 				538C0541238100B1006B97C5 /* TapiocaTeaView.swift in Sources */,
 				538C05272380DB91006B97C5 /* OrderDetail.swift in Sources */,
 				538C05372380EF65006B97C5 /* Special.swift in Sources */,

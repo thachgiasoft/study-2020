@@ -1,3 +1,11 @@
+//
+//  SceneDelegate.swift
+//  EnvironmentObjectExample
+//
+//  Created by sh0 on 2020/02/17.
+//  Copyright © 2020 com.shofujimoto. All rights reserved.
+//
+
 import UIKit
 import SwiftUI
 
@@ -11,9 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
+        let order = Order()
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView().environmentObject(OrderStore())
-
+        //let contentView = ContentView().environmentObject(order)
+        
+        let contentView = KeyboardExample()
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
