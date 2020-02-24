@@ -27,6 +27,12 @@
 		53F05E4522F3228C009E3AA8 /* OrderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F05E4422F3228C009E3AA8 /* OrderEntity.swift */; };
 		53F05E4722F326FF009E3AA8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F05E4622F326FF009E3AA8 /* Data.swift */; };
 		53F05E4922F3275A009E3AA8 /* orderEntity.json in Resources */ = {isa = PBXBuildFile; fileRef = 53F05E4822F3275A009E3AA8 /* orderEntity.json */; };
+		9A29662A240357C600E99CB7 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A296629240357C600E99CB7 /* PageView.swift */; };
+		9A29662C240358E400E99CB7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29662B240358E400E99CB7 /* PageViewController.swift */; };
+		9A29662E2403594F00E99CB7 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29662D2403594F00E99CB7 /* PageControl.swift */; };
+		9A29663024035C5200E99CB7 /* TextOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29662F24035C5200E99CB7 /* TextOverlay.swift */; };
+		9A29663224035DB400E99CB7 /* SpecialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29663124035DB400E99CB7 /* SpecialCard.swift */; };
+		9A2966342403618A00E99CB7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2966332403618A00E99CB7 /* MapView.swift */; };
 		9A4017F923FDEF8B0074018E /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4017F823FDEF8B0074018E /* KeyboardObserver.swift */; };
 		9A4017FD23FDF3B70074018E /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4017FC23FDF3B70074018E /* OrderView.swift */; };
 		9ACA303623EE5B6F00135936 /* ShopImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA303523EE5B6F00135936 /* ShopImage.swift */; };
@@ -56,6 +62,12 @@
 		53F05E4422F3228C009E3AA8 /* OrderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderEntity.swift; sourceTree = "<group>"; };
 		53F05E4622F326FF009E3AA8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Data.swift; path = "Tapioca milk tea/Data/Data.swift"; sourceTree = SOURCE_ROOT; };
 		53F05E4822F3275A009E3AA8 /* orderEntity.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = orderEntity.json; sourceTree = "<group>"; };
+		9A296629240357C600E99CB7 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		9A29662B240358E400E99CB7 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		9A29662D2403594F00E99CB7 /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		9A29662F24035C5200E99CB7 /* TextOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOverlay.swift; sourceTree = "<group>"; };
+		9A29663124035DB400E99CB7 /* SpecialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCard.swift; sourceTree = "<group>"; };
+		9A2966332403618A00E99CB7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9A4017F823FDEF8B0074018E /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		9A4017FC23FDF3B70074018E /* OrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderView.swift; path = "../../../../../../Downloads/swiftui-sample-code2019-11-25/Chapter11/Complete/Tapioca milk tea/Tapioca milk tea/OrderView.swift"; sourceTree = "<group>"; };
 		9ACA303523EE5B6F00135936 /* ShopImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopImage.swift; sourceTree = "<group>"; };
@@ -76,12 +88,18 @@
 		538C05252380DB5D006B97C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A29662B240358E400E99CB7 /* PageViewController.swift */,
+				9A29662D2403594F00E99CB7 /* PageControl.swift */,
 				538C05282380DE54006B97C5 /* OrderRowView.swift */,
 				538C053A2380F18F006B97C5 /* ShopRow.swift */,
 				538C053C2380F280006B97C5 /* CategoryRow.swift */,
 				538C0540238100B1006B97C5 /* TapiocaTeaView.swift */,
 				9ACA303523EE5B6F00135936 /* ShopImage.swift */,
 				9ACA303723EE5DC000135936 /* ShopView.swift */,
+				9A296629240357C600E99CB7 /* PageView.swift */,
+				9A29662F24035C5200E99CB7 /* TextOverlay.swift */,
+				9A29663124035DB400E99CB7 /* SpecialCard.swift */,
+				9A2966332403618A00E99CB7 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,17 +246,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				53BB726622E1C33C00AA7546 /* AppDelegate.swift in Sources */,
+				9A2966342403618A00E99CB7 /* MapView.swift in Sources */,
 				538C053F2380F561006B97C5 /* HomeView.swift in Sources */,
 				538C053B2380F18F006B97C5 /* ShopRow.swift in Sources */,
 				53F05E4522F3228C009E3AA8 /* OrderEntity.swift in Sources */,
 				538C05392380F14E006B97C5 /* OrderHistoryView.swift in Sources */,
 				9ACA303823EE5DC000135936 /* ShopView.swift in Sources */,
 				53BB726D22E1C33C00AA7546 /* ContentView.swift in Sources */,
+				9A29662A240357C600E99CB7 /* PageView.swift in Sources */,
+				9A29662E2403594F00E99CB7 /* PageControl.swift in Sources */,
+				9A29663224035DB400E99CB7 /* SpecialCard.swift in Sources */,
 				9A4017FD23FDF3B70074018E /* OrderView.swift in Sources */,
 				9ACA303623EE5B6F00135936 /* ShopImage.swift in Sources */,
 				538C053D2380F280006B97C5 /* CategoryRow.swift in Sources */,
+				9A29662C240358E400E99CB7 /* PageViewController.swift in Sources */,
 				9A4017F923FDEF8B0074018E /* KeyboardObserver.swift in Sources */,
 				538C0541238100B1006B97C5 /* TapiocaTeaView.swift in Sources */,
+				9A29663024035C5200E99CB7 /* TextOverlay.swift in Sources */,
 				538C05272380DB91006B97C5 /* OrderDetail.swift in Sources */,
 				538C05372380EF65006B97C5 /* Special.swift in Sources */,
 				53BB726822E1C33C00AA7546 /* SceneDelegate.swift in Sources */,

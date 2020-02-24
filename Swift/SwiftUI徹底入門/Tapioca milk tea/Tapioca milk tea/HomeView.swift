@@ -11,11 +11,17 @@ struct HomeView: View {
         )
     }
     
+    var featured: [Special] {
+        dataStore.specials.filter { $0.isFeatured }
+    }
+    
     var body: some View {
         NavigationView {
             ScrollView {
+                PageView(featured.map { SpecialCard(special:$0) })
+                    .frame(height: 280)
+                
                 ShopRow(shops: dataStore.shops)
-
                 ForEach(categories.keys.sorted(),
                         id: \.self) { key in
                     CategoryRow(categoryName: key,
