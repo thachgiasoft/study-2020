@@ -1,11 +1,3 @@
-//
-//  ShopView.swift
-//  Tapioca milk tea
-//
-//  Created by sh0 on 2020/02/08.
-//  Copyright © 2020 example.com. All rights reserved.
-//
-
 import SwiftUI
 
 struct ShopView: View {
@@ -20,14 +12,16 @@ struct ShopView: View {
                     withAnimation {
                         self.isZoomMode.toggle()
                     }
-            }.edgesIgnoringSafeArea(self.isZoomMode ? .all : .init())
+                }.edgesIgnoringSafeArea(
+                    self.isZoomMode ? .all : .init())
+
             if !isZoomMode {
-                
                 ShopImage(image: shop.image)
                     .padding(.top, -130)
-                    .rotation3DEffect(.init(degrees: degree),                   axis: (x: 0.0,
-                                                                                       y: 1.0,
-                                                                                       z: -0.2))
+                    .rotation3DEffect(.init(degrees: degree),
+                                      axis: (x: 0.0,
+                                             y: 1.0,
+                                             z: -0.2))
                     .animation(.interpolatingSpring(
                         mass: 0.1,
                         stiffness: 6,
@@ -36,16 +30,16 @@ struct ShopView: View {
                     .onAppear {
                         self.degree = 0
                     }
-            
+
                 Text(shop.name)
-                .padding()
+                    .padding()
                     .font(.largeTitle)
                 Text(shop.address)
-                .lineLimit(nil)
+                    .lineLimit(nil)
                     .multilineTextAlignment(.center)
-                .padding()
+                    .padding()
                 Text("Phone: " + shop.phoneNumber)
-                .padding()
+                    .padding()
             }
         }
         .navigationBarTitle(shop.name)
@@ -54,6 +48,8 @@ struct ShopView: View {
 
 struct ShopView_Previews: PreviewProvider {
     static var previews: some View {
-        ShopView(shop: dataStore.shops[2])
+        NavigationView{
+            ShopView(shop: dataStore.shops[2])
+        }
     }
 }

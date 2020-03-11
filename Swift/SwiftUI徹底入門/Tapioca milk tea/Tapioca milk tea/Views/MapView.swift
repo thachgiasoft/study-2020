@@ -1,11 +1,3 @@
-//
-//  MapView.swift
-//  Tapioca milk tea
-//
-//  Created by sh0 on 2020/02/24.
-//  Copyright © 2020 example.com. All rights reserved.
-//
-
 import SwiftUI
 import MapKit
 
@@ -23,7 +15,6 @@ struct MapView: UIViewRepresentable {
                                         span: span)
         view.setRegion(region, animated: true)
     }
-    
 }
 
 struct MapView_Previews: PreviewProvider {

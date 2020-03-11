@@ -1,11 +1,3 @@
-//
-//  SpecialCard.swift
-//  Tapioca milk tea
-//
-//  Created by sh0 on 2020/02/24.
-//  Copyright © 2020 example.com. All rights reserved.
-//
-
 import SwiftUI
 
 struct SpecialCard: View {
@@ -15,7 +7,7 @@ struct SpecialCard: View {
         self.special.image
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(height: 280)
+            .frame(height:280)
             .overlay(TextOverlay(special: self.special))
             .clipped()
     }

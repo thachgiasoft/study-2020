@@ -3,7 +3,12 @@ import SwiftUI
 struct OrderHistoryView: View {
     @State var showFavoritesOnly = false
     @State var showDeleteActionSheet = false
-    @EnvironmentObject var orderStore: OrderStore
+
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \OrderEntity.date,
+                                           ascending: false)],
+        animation: .default)
+    var orders: FetchedResults<OrderEntity>
     
     var body: some View {
         NavigationView {
@@ -11,18 +16,22 @@ struct OrderHistoryView: View {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
                 }
-                .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
-                ForEach(orderStore.orders) { order in
+                .padding(EdgeInsets(top: 0,
+                                    leading: 20,
+                                    bottom: 0,
+                                    trailing: 20))
+                
+                ForEach(orders) { order in
                     if !self.showFavoritesOnly || order.favorite {
                         NavigationLink(
                             destination: OrderDetail(order: order)
-                        ) {
-                            OrderRowView(order: order)
+                        ){
+                            OrderRowView(order:order)
                         }
                     }
                 }
             }
-        .navigationBarTitle("Order list")
+            .navigationBarTitle("Order list")
             .navigationBarItems(trailing:
                 Button(action: {
                     self.showDeleteActionSheet = true
@@ -30,30 +39,27 @@ struct OrderHistoryView: View {
                     Text("Favorites")
                 }.actionSheet(isPresented: $showDeleteActionSheet) {
                     ActionSheet(title: Text("Message"),
-                                message: Text("Make All Favorites"),
-                                buttons: [
-                                    .destructive(Text("Favorites")) {
-                                        self.orderStore.orders.forEach {
-                                            $0.favorite = true
-                                        }
-                                    },
-                                    .cancel(Text("Cancel"))
+                    message: Text("Make All Favorites"),
+                    buttons: [
+                        .destructive(Text("Favorites")){
+                            self.orders.forEach {
+                                $0.favorite = true
+                            }
+                        },
+                        .cancel(Text("Cancel")),
                     ])
-            })
+                }
+            )
         }
-
     }
 }
 
 struct OrderHistoryView_Previews: PreviewProvider {
-    static var orderStore: OrderStore {
-        let orderStore = OrderStore()
-        orderStore.orders.append(OrderEntity())
-        return orderStore
-    }
-    
     static var previews: some View {
-        OrderHistoryView()
-        .environmentObject(orderStore)
+        let context = (UIApplication.shared.delegate as! AppDelegate)
+            .persistentContainer.viewContext
+        
+        return OrderHistoryView()
+            .environment(\.managedObjectContext, context)
     }
 }

@@ -22,14 +22,15 @@ struct HomeView: View {
                     .frame(height: 280)
                 
                 ShopRow(shops: dataStore.shops)
+
                 ForEach(categories.keys.sorted(),
                         id: \.self) { key in
                     CategoryRow(categoryName: key,
                                 items: self.categories[key]!)
                 }
             }
-        }.navigationBarTitle(Text("Home"))
-
+            .navigationBarTitle(Text("Home"))
+        }
     }
 }
 

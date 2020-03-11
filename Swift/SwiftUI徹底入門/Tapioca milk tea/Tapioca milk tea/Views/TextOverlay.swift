@@ -1,11 +1,3 @@
-//
-//  TextOverlay.swift
-//  Tapioca milk tea
-//
-//  Created by sh0 on 2020/02/24.
-//  Copyright © 2020 example.com. All rights reserved.
-//
-
 import SwiftUI
 
 struct TextOverlay: View {
@@ -16,8 +8,8 @@ struct TextOverlay: View {
             gradient: Gradient(
                 colors: [Color.black.opacity(0.7),
                          Color.black.opacity(0)]),
-                startPoint: .bottom,
-                endPoint: .center)
+            startPoint: .bottom,
+            endPoint: .center)
     }
     
     var body: some View {
@@ -26,7 +18,7 @@ struct TextOverlay: View {
             VStack(alignment: .leading) {
                 Text(special.caption)
                     .font(.title)
-                .bold()
+                    .bold()
                 Text(special.text)
             }.padding()
         }.foregroundColor(.white)

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		538C05272380DB91006B97C5 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C05262380DB91006B97C5 /* OrderDetail.swift */; };
 		538C05292380DE54006B97C5 /* OrderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C05282380DE54006B97C5 /* OrderRowView.swift */; };
+		538C052D2380E693006B97C5 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C052C2380E693006B97C5 /* OrderView.swift */; };
 		538C05342380EF65006B97C5 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C05302380EF65006B97C5 /* Shop.swift */; };
 		538C05352380EF65006B97C5 /* shop.json in Resources */ = {isa = PBXBuildFile; fileRef = 538C05312380EF65006B97C5 /* shop.json */; };
 		538C05362380EF65006B97C5 /* special.json in Resources */ = {isa = PBXBuildFile; fileRef = 538C05322380EF65006B97C5 /* special.json */; };
@@ -18,30 +19,31 @@
 		538C053D2380F280006B97C5 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C053C2380F280006B97C5 /* CategoryRow.swift */; };
 		538C053F2380F561006B97C5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C053E2380F561006B97C5 /* HomeView.swift */; };
 		538C0541238100B1006B97C5 /* TapiocaTeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C0540238100B1006B97C5 /* TapiocaTeaView.swift */; };
+		538C054323810AD6006B97C5 /* ShopImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C054223810AD6006B97C5 /* ShopImage.swift */; };
+		538C054523810CD5006B97C5 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C054423810CD5006B97C5 /* ShopView.swift */; };
+		538C054B23814206006B97C5 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C054A23814206006B97C5 /* KeyboardObserver.swift */; };
+		538C054D238161E2006B97C5 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C054C238161E2006B97C5 /* PageControl.swift */; };
+		538C054F23816205006B97C5 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C054E23816205006B97C5 /* PageViewController.swift */; };
+		538C05532381641E006B97C5 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C05522381641E006B97C5 /* PageView.swift */; };
+		538C0555238164FB006B97C5 /* TextOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C0554238164FB006B97C5 /* TextOverlay.swift */; };
+		538C055723816565006B97C5 /* SpecialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C055623816565006B97C5 /* SpecialCard.swift */; };
+		538C05592381697A006B97C5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C05582381697A006B97C5 /* MapView.swift */; };
+		538C055E23817100006B97C5 /* OrderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C055D23817100006B97C5 /* OrderEntity.swift */; };
+		538C055F23817268006B97C5 /* Tapioca_milk_tea.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 538C055A23816F87006B97C5 /* Tapioca_milk_tea.xcdatamodeld */; };
 		53BB726622E1C33C00AA7546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB726522E1C33C00AA7546 /* AppDelegate.swift */; };
 		53BB726822E1C33C00AA7546 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB726722E1C33C00AA7546 /* SceneDelegate.swift */; };
 		53BB726D22E1C33C00AA7546 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BB726C22E1C33C00AA7546 /* ContentView.swift */; };
 		53BB726F22E1C33E00AA7546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53BB726E22E1C33E00AA7546 /* Assets.xcassets */; };
 		53BB727222E1C33E00AA7546 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53BB727122E1C33E00AA7546 /* Preview Assets.xcassets */; };
 		53BB727522E1C33E00AA7546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53BB727322E1C33E00AA7546 /* LaunchScreen.storyboard */; };
-		53F05E4522F3228C009E3AA8 /* OrderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F05E4422F3228C009E3AA8 /* OrderEntity.swift */; };
 		53F05E4722F326FF009E3AA8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F05E4622F326FF009E3AA8 /* Data.swift */; };
 		53F05E4922F3275A009E3AA8 /* orderEntity.json in Resources */ = {isa = PBXBuildFile; fileRef = 53F05E4822F3275A009E3AA8 /* orderEntity.json */; };
-		9A29662A240357C600E99CB7 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A296629240357C600E99CB7 /* PageView.swift */; };
-		9A29662C240358E400E99CB7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29662B240358E400E99CB7 /* PageViewController.swift */; };
-		9A29662E2403594F00E99CB7 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29662D2403594F00E99CB7 /* PageControl.swift */; };
-		9A29663024035C5200E99CB7 /* TextOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29662F24035C5200E99CB7 /* TextOverlay.swift */; };
-		9A29663224035DB400E99CB7 /* SpecialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29663124035DB400E99CB7 /* SpecialCard.swift */; };
-		9A2966342403618A00E99CB7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2966332403618A00E99CB7 /* MapView.swift */; };
-		9A4017F923FDEF8B0074018E /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4017F823FDEF8B0074018E /* KeyboardObserver.swift */; };
-		9A4017FD23FDF3B70074018E /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4017FC23FDF3B70074018E /* OrderView.swift */; };
-		9ACA303623EE5B6F00135936 /* ShopImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA303523EE5B6F00135936 /* ShopImage.swift */; };
-		9ACA303823EE5DC000135936 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA303723EE5DC000135936 /* ShopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		538C05262380DB91006B97C5 /* OrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
 		538C05282380DE54006B97C5 /* OrderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRowView.swift; sourceTree = "<group>"; };
+		538C052C2380E693006B97C5 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		538C05302380EF65006B97C5 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		538C05312380EF65006B97C5 /* shop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shop.json; sourceTree = "<group>"; };
 		538C05322380EF65006B97C5 /* special.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = special.json; sourceTree = "<group>"; };
@@ -51,6 +53,17 @@
 		538C053C2380F280006B97C5 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		538C053E2380F561006B97C5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		538C0540238100B1006B97C5 /* TapiocaTeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapiocaTeaView.swift; sourceTree = "<group>"; };
+		538C054223810AD6006B97C5 /* ShopImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopImage.swift; sourceTree = "<group>"; };
+		538C054423810CD5006B97C5 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		538C054A23814206006B97C5 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		538C054C238161E2006B97C5 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		538C054E23816205006B97C5 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		538C05522381641E006B97C5 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		538C0554238164FB006B97C5 /* TextOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOverlay.swift; sourceTree = "<group>"; };
+		538C055623816565006B97C5 /* SpecialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCard.swift; sourceTree = "<group>"; };
+		538C05582381697A006B97C5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		538C055B23816F87006B97C5 /* Tapioca_milk_tea.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tapioca_milk_tea.xcdatamodel; sourceTree = "<group>"; };
+		538C055D23817100006B97C5 /* OrderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderEntity.swift; sourceTree = "<group>"; };
 		53BB726222E1C33C00AA7546 /* Tapioca milk tea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tapioca milk tea.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53BB726522E1C33C00AA7546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53BB726722E1C33C00AA7546 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,19 +72,8 @@
 		53BB727122E1C33E00AA7546 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		53BB727422E1C33E00AA7546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53BB727622E1C33E00AA7546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53F05E4422F3228C009E3AA8 /* OrderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderEntity.swift; sourceTree = "<group>"; };
 		53F05E4622F326FF009E3AA8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Data.swift; path = "Tapioca milk tea/Data/Data.swift"; sourceTree = SOURCE_ROOT; };
 		53F05E4822F3275A009E3AA8 /* orderEntity.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = orderEntity.json; sourceTree = "<group>"; };
-		9A296629240357C600E99CB7 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
-		9A29662B240358E400E99CB7 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		9A29662D2403594F00E99CB7 /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
-		9A29662F24035C5200E99CB7 /* TextOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOverlay.swift; sourceTree = "<group>"; };
-		9A29663124035DB400E99CB7 /* SpecialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCard.swift; sourceTree = "<group>"; };
-		9A2966332403618A00E99CB7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		9A4017F823FDEF8B0074018E /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
-		9A4017FC23FDF3B70074018E /* OrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderView.swift; path = "../../../../../../Downloads/swiftui-sample-code2019-11-25/Chapter11/Complete/Tapioca milk tea/Tapioca milk tea/OrderView.swift"; sourceTree = "<group>"; };
-		9ACA303523EE5B6F00135936 /* ShopImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopImage.swift; sourceTree = "<group>"; };
-		9ACA303723EE5DC000135936 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,20 +90,27 @@
 		538C05252380DB5D006B97C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9A29662B240358E400E99CB7 /* PageViewController.swift */,
-				9A29662D2403594F00E99CB7 /* PageControl.swift */,
 				538C05282380DE54006B97C5 /* OrderRowView.swift */,
 				538C053A2380F18F006B97C5 /* ShopRow.swift */,
 				538C053C2380F280006B97C5 /* CategoryRow.swift */,
 				538C0540238100B1006B97C5 /* TapiocaTeaView.swift */,
-				9ACA303523EE5B6F00135936 /* ShopImage.swift */,
-				9ACA303723EE5DC000135936 /* ShopView.swift */,
-				9A296629240357C600E99CB7 /* PageView.swift */,
-				9A29662F24035C5200E99CB7 /* TextOverlay.swift */,
-				9A29663124035DB400E99CB7 /* SpecialCard.swift */,
-				9A2966332403618A00E99CB7 /* MapView.swift */,
+				538C054223810AD6006B97C5 /* ShopImage.swift */,
+				538C054C238161E2006B97C5 /* PageControl.swift */,
+				538C054E23816205006B97C5 /* PageViewController.swift */,
+				538C05522381641E006B97C5 /* PageView.swift */,
+				538C0554238164FB006B97C5 /* TextOverlay.swift */,
+				538C055623816565006B97C5 /* SpecialCard.swift */,
+				538C05582381697A006B97C5 /* MapView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		538C0549238141EA006B97C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				538C054A23814206006B97C5 /* KeyboardObserver.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		53BB725922E1C33C00AA7546 = {
@@ -123,19 +132,21 @@
 		53BB726422E1C33C00AA7546 /* Tapioca milk tea */ = {
 			isa = PBXGroup;
 			children = (
-				9A4017F723FDEF8B0074018E /* Utils */,
+				538C0549238141EA006B97C5 /* Utils */,
 				538C05252380DB5D006B97C5 /* Views */,
 				53F05E4A22F3C5A1009E3AA8 /* Data */,
 				53BB726522E1C33C00AA7546 /* AppDelegate.swift */,
 				53BB726722E1C33C00AA7546 /* SceneDelegate.swift */,
 				53BB726C22E1C33C00AA7546 /* ContentView.swift */,
-				9A4017FC23FDF3B70074018E /* OrderView.swift */,
 				538C05262380DB91006B97C5 /* OrderDetail.swift */,
+				538C052C2380E693006B97C5 /* OrderView.swift */,
 				538C05382380F14E006B97C5 /* OrderHistoryView.swift */,
 				538C053E2380F561006B97C5 /* HomeView.swift */,
+				538C054423810CD5006B97C5 /* ShopView.swift */,
 				53BB726E22E1C33E00AA7546 /* Assets.xcassets */,
 				53BB727322E1C33E00AA7546 /* LaunchScreen.storyboard */,
 				53BB727622E1C33E00AA7546 /* Info.plist */,
+				538C055A23816F87006B97C5 /* Tapioca_milk_tea.xcdatamodeld */,
 				53BB727022E1C33E00AA7546 /* Preview Content */,
 			);
 			path = "Tapioca milk tea";
@@ -158,17 +169,9 @@
 				538C05332380EF65006B97C5 /* Special.swift */,
 				53F05E4622F326FF009E3AA8 /* Data.swift */,
 				53F05E4822F3275A009E3AA8 /* orderEntity.json */,
-				53F05E4422F3228C009E3AA8 /* OrderEntity.swift */,
+				538C055D23817100006B97C5 /* OrderEntity.swift */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		9A4017F723FDEF8B0074018E /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				9A4017F823FDEF8B0074018E /* KeyboardObserver.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,29 +249,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				53BB726622E1C33C00AA7546 /* AppDelegate.swift in Sources */,
-				9A2966342403618A00E99CB7 /* MapView.swift in Sources */,
+				538C05592381697A006B97C5 /* MapView.swift in Sources */,
 				538C053F2380F561006B97C5 /* HomeView.swift in Sources */,
+				538C052D2380E693006B97C5 /* OrderView.swift in Sources */,
 				538C053B2380F18F006B97C5 /* ShopRow.swift in Sources */,
-				53F05E4522F3228C009E3AA8 /* OrderEntity.swift in Sources */,
 				538C05392380F14E006B97C5 /* OrderHistoryView.swift in Sources */,
-				9ACA303823EE5DC000135936 /* ShopView.swift in Sources */,
+				538C054523810CD5006B97C5 /* ShopView.swift in Sources */,
 				53BB726D22E1C33C00AA7546 /* ContentView.swift in Sources */,
-				9A29662A240357C600E99CB7 /* PageView.swift in Sources */,
-				9A29662E2403594F00E99CB7 /* PageControl.swift in Sources */,
-				9A29663224035DB400E99CB7 /* SpecialCard.swift in Sources */,
-				9A4017FD23FDF3B70074018E /* OrderView.swift in Sources */,
-				9ACA303623EE5B6F00135936 /* ShopImage.swift in Sources */,
+				538C054323810AD6006B97C5 /* ShopImage.swift in Sources */,
+				538C055723816565006B97C5 /* SpecialCard.swift in Sources */,
 				538C053D2380F280006B97C5 /* CategoryRow.swift in Sources */,
-				9A29662C240358E400E99CB7 /* PageViewController.swift in Sources */,
-				9A4017F923FDEF8B0074018E /* KeyboardObserver.swift in Sources */,
+				538C054B23814206006B97C5 /* KeyboardObserver.swift in Sources */,
+				538C055E23817100006B97C5 /* OrderEntity.swift in Sources */,
+				538C054F23816205006B97C5 /* PageViewController.swift in Sources */,
 				538C0541238100B1006B97C5 /* TapiocaTeaView.swift in Sources */,
-				9A29663024035C5200E99CB7 /* TextOverlay.swift in Sources */,
+				538C05532381641E006B97C5 /* PageView.swift in Sources */,
 				538C05272380DB91006B97C5 /* OrderDetail.swift in Sources */,
+				538C0555238164FB006B97C5 /* TextOverlay.swift in Sources */,
 				538C05372380EF65006B97C5 /* Special.swift in Sources */,
 				53BB726822E1C33C00AA7546 /* SceneDelegate.swift in Sources */,
+				538C055F23817268006B97C5 /* Tapioca_milk_tea.xcdatamodeld in Sources */,
 				538C05342380EF65006B97C5 /* Shop.swift in Sources */,
 				538C05292380DE54006B97C5 /* OrderRowView.swift in Sources */,
 				53F05E4722F326FF009E3AA8 /* Data.swift in Sources */,
+				538C054D238161E2006B97C5 /* PageControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Tapioca milk tea\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = V8J7P6B573;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Tapioca milk tea/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -425,6 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Tapioca milk tea\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = V8J7P6B573;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Tapioca milk tea/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,6 +466,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		538C055A23816F87006B97C5 /* Tapioca_milk_tea.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				538C055B23816F87006B97C5 /* Tapioca_milk_tea.xcdatamodel */,
+			);
+			currentVersion = 538C055B23816F87006B97C5 /* Tapioca_milk_tea.xcdatamodel */;
+			path = Tapioca_milk_tea.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 53BB725A22E1C33C00AA7546 /* Project object */;
 }

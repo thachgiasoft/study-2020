@@ -1,4 +1,4 @@
-import Foundation
+import CoreData
 
 enum Flavor:Int16 {
     case milk_tea
@@ -31,16 +31,33 @@ var iceCreamArray = ["None",
                      "Tea",
                      "Matcha"]
 
-class OrderEntity : Identifiable, ObservableObject {
-    @Published public var id: String       // ID
-    @Published public var flavor: Int16    // 味の種類
-    @Published public var iceCream: Int16  // アイストッピング
-    @Published public var nataDeCoco: Bool // ナタデココトッピング有無
-    @Published public var other: String    // 備考
-    @Published public var date: Date       // 注文日
-    @Published public var quantity: Int16  // 注文数
-    @Published public var favorite: Bool   // お気に入りフラグ
-
+extension OrderEntity {
+    static func create(in managedObjectContext: NSManagedObjectContext,
+                       flavor: Int = 0,
+                       nateDeCoco: Bool = false,
+                       iceCream: Int = 0,
+                       quantity: Int = 1,
+                       other: String = "",
+                       date: Date = Date(),
+                       favorite: Bool = false
+    ){
+        let newOrder = self.init(context: managedObjectContext)
+        newOrder.flavor = Int16(flavor)
+        newOrder.nataDeCoco = nateDeCoco
+        newOrder.iceCream = Int16(iceCream)
+        newOrder.quantity = Int16(quantity)
+        newOrder.other = other
+        newOrder.id = UUID().uuidString
+        newOrder.date = date
+        newOrder.favorite = favorite
+        do {
+            try  managedObjectContext.save()
+        } catch {
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
+    }
+    
     /// 味の種類の文字列を取得する
     public var flavorName: String {
         Flavor(rawValue: self.flavor)!.name
@@ -51,24 +68,11 @@ class OrderEntity : Identifiable, ObservableObject {
         IceCream(rawValue: self.iceCream)!.name
     }
     
-    init(
-        id: String = UUID().uuidString,
-        flavor: Int = 0,
-        iceCream: Int = 0,
-        nataDeCoco: Bool = true,
-        other: String = "",
-        date: Date = Date(),
-        quantity: Int = 1,
-        favorite: Bool = false)
-    {
-        self.id = id
-        self.flavor = Int16(flavor)
-        self.iceCream = Int16(iceCream)
-        self.nataDeCoco = nataDeCoco
-        self.other = other
-        self.date = date
-        self.quantity = Int16(quantity)
-        self.favorite = favorite
+    override
+    public func didChangeValue(forKey key: String){
+        super.didChangeValue(forKey: key)
+        objectWillChange.send()
     }
 }
 
+extension OrderEntity: Identifiable{ }
