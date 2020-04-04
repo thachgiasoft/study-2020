@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+  <head>
+    <title>Django Easy Blog</title>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="nav-left">
+        <h1><a href="{% url 'home' %}">Django Easy blog</a></h1>
+      </div>
+      <div class="nav-right">
+        <a href="{% url 'post_new' %}">+ New Blog</a>
+      </div>
+    </header>
+
+    {% if user.is_authenticated %}
+      <p>こんにちは、 {{ user.username }}</p>
+      <p>既にログインしています</p>
+      <p><a href="{% url 'logout' %}">ログアウト</a></p>
+    {% else %}
+      <p>あなたはログインしていません。ログインしてください</p>
+      <a href="{% url 'login' %}">ログイン</a>  
+      <a href="{% url 'signup' %}">アカウントを作成する</a>    
+    {% endif %}
+    <hr>
+    {% block content %}
+    {% endblock content %}
+    </div>
+  </body>
+</html>

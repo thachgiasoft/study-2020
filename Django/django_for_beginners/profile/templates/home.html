@@ -1,0 +1,9 @@
+<!-- templates/home.html-->
+<h1>This is HomePage! Look at your data list!</h1>
+<ul>
+  {% for profile in all_profiles_list %}
+    <li>NAME:{{ profile.name }} </br>
+    AGE:{{ profile.age }} </br>
+    INTRODUCTION: {{ profile.introduction }}</li>
+  {% endfor %}
+</ul>
