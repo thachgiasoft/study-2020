@@ -1,0 +1,7 @@
+<!-- post_list.html -->
+<h1>Posts</h1>
+{% for post in object_list %}
+<ul>
+  <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+</ul>
+{% endfor %}

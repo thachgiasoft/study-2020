@@ -21,3 +21,18 @@ class Post(models.Model):
 
   def get_absolute_url(self):
     return reverse('post_detail', args=[str(self.id)])
+
+class Article(models.Model):
+  title = models.CharField(max_length=200)
+  author = models.ForeignKey(
+    'User',
+    on_delete=models.CASCADE
+  )
+  body = models.TextField()
+  slug = models.SlugField()
+
+  def __str__(self):
+    return self.title
+
+  def get_absolute_url(self):
+    return reverse('article_detail', kwargs={'slug': self.slug})
