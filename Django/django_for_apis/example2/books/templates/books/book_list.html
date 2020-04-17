@@ -1,0 +1,9 @@
+<h1>本の一覧</h1>
+{% for book in object_list %}
+  <ul>
+    <li>タイトル：{{ book.title }}</li>
+    <li>サブタイトル：{{ book.subtitle }}</li>
+    <li>著者：{{ book.author }}</li>
+    <li>ISBN：{{ book.isbn }}</li>
+  </ul>
+{% endfor %}
